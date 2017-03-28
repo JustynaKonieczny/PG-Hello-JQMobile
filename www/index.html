@@ -8,10 +8,14 @@
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	</head>
+	
+	
 	<body onload="init()">
 		
 		<!-- My app main page -->
-		<div data-role="page" id="pageone">
+		<div data-role="page" id="mainPage">
+		  
+		  <!--HEADER-->
 		  <div data-role="header">
 			<h1>MY BUSINESS CARD</h1>
 		  </div>
@@ -24,17 +28,22 @@
 			  E-mail address: kojustynka@gmail.com<br>
 			  Field of Studies: Applied Informatics<br>
 			  University: University of Economics in Cracow<br>	
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests</a>
+			  
+			<a href="#secondPage" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests</a>
 		  </div>
 			
-			
+		<!--FOOTER-->
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Justyna Konieczny</h1>
 		  </div> 
+		  
 		</div> 
 		
+		
+		
+		
 		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
+		<div data-role="page" id="secondPage">
 			<div data-role="header" data-theme="a">
 				<h1>My interests</h1>
 			</div>
@@ -46,6 +55,9 @@
 				- healthy lifestyle<br>
 				- pottery<br>
 				</p>
+			<a href="#mainPage" class="ui-btn">Go to main page</a>
+			</div>
+			
 			</div>
 		</div>		
 		
