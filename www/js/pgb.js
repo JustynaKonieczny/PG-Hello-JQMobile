@@ -7,14 +7,9 @@ function onDeviceReady() {
 	deviceInfo();
 }
 
-function deviceInfo() {
+function meInfo() {
 
-	info =  'Device Model   : '    + device.model + '<br>' + 
-			'Device Name    : '     + device.name + '<br>' + 
-			'Device Cordova : '  + device.cordova + '<br>' + 
-			'Device Platform: ' + device.platform + '<br>' + 
-			'Device UUID    : '     + device.uuid + '<br>' + 
-			'Device Version : '  + device.version + '<br>';
-
+	info =  'My hobbies:'+ <br> +
+		'fitness, healthy cooking, baking, dancing, travels';
 	document.getElementById("deviceDetails").innerHTML = info;	
 }
