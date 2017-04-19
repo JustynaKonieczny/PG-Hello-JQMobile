@@ -62,7 +62,7 @@ function countWorkDays(){
             if(dataOd>dataDo){
                 $('.DayPlandDataWynik').append('Czas rozpoczecia pracy nie moze byc wieksza od czasu zakonczenia pracy.<br>');
             }else{
-                $('.DayPlandDataWynik').append('Czas pracy wynosi '+minutesToInputTime(dataDo-dataOd)+'.<br>');
+                $('.DayPlandDataWynik').append('Twój czas pracy wynosi '+minutesToInputTime(dataDo-dataOd)+'godzin <br>');
             }
         }
     }
@@ -71,7 +71,7 @@ function countWorkDays(){
 }
 
 $(document).ready(function(){
-        $.mobile.changePage("#MainMenu2");
+        $.mobile.changePage("#MainMenu");
         
         console.log(daysInThisMonth());
     
