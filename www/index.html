@@ -22,65 +22,8 @@
 
 <body onload="init()">
 
-
     <!--STRONA GLOWNA APLIKACJI-->
     <div data-role="page" id="MainMenu">
-
-<!--		<input type="date" class="input_date"/>
-		<div class="input_date_text"></div>-->
-        <!--HEADER-->
-        <div data-role="header">
-            <h6>Work Hours</h6>
-        </div>
-
-        <!--Przycisk DODAJ PLAN DNIA-->
-        <div data-role="main" class="ui-content">
-            <h5>Witaj w aplikacji WorkHours</h5>
-            <a href="#DayPlan" class="ui-btn">Dodaj nowy plan dnia</a>
-        </div>
-
-        <!--Przycisk ZOBACZ STATUS NA MIESIĄC-->
-        <div data-role="main" class="ui-content">
-            <a href="#MonthStat" class="ui-btn">Zobacz status miesięczny</a>
-        </div>
-
-        <!--Przycisk USTAWIENIA-->
-        <div data-role="main" class="ui-content">
-            <a href="#Settings" class="ui-btn">Ustawienia</a>
-        </div>
-
-        <!--Przycisk INSTRUKCJA APLIKACJI-->
-        <div data-role="main" class="ui-content">
-            <a href="#AppManual" class="ui-btn">Instrukcja</a>
-        </div>
-
-        <!--Przycisk INFORMACJE O AUTORACH-->
-        <div data-role="main" class="ui-content">
-            <a href="#AuthorsInfo" class="ui-btn">Info o autorach</a>
-        </div>
-
-
-        <!--FOOTER-->
-        <div data-role="footer">
-            <h6>Footer Text</h6>
-        </div>
-    </div>
-    <!--KONIEC DIVA Z MENU GLOWNEGO-->
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    <!--STRONA GLOWNA APLIKACJI-->
-    <div data-role="page" id="MainMenu2">
 
 <!--		<input type="date" class="input_date"/>
 		<div class="input_date_text"></div>-->
@@ -95,28 +38,16 @@
             
         <!--Przycisk DODAJ PLAN DNIA-->
         <div data-role="main" class="ui-content">
-<!--            <a href="#MonthStat" class="ui-btn">Zobacz status miesięczny</a>-->
+        <a href="#MonthStat" class="ui-btn">Zobacz status miesięczny</a>
             <a href="#DayPlan" class="ui-btn">Dodaj nowy plan dnia</a>
-<!--            <a href="#AppManual" class="ui-btn">Instrukcja</a>-->
-<!--            <a href="#Settings" class="ui-btn">Ustawienia</a>-->
-<!--            <a href="#AuthorsInfo" class="ui-btn">Info o autorach</a>-->
+            <a href="#AppManual" class="ui-btn">Instrukcja</a>
+            <a href="#Settings" class="ui-btn">Ustawienia</a>
+            <a href="#AuthorsInfo" class="ui-btn">Info o autorach</a>
         </div>
 
 
         <div data-role="main" class="ui-content">
-            <label for="iloscDniPracy">Podaj ilość dni pracy w tym miesiącu.</label>
-            <input type="number" name="iloscDniPracy">
-            <div class="iloscDniPracyText"></div>
-        </div>
-
-        <div data-role="main" class="ui-content">
-            <label for="iloscGodzinPracy">Podaj ilość godzin jaką przepracowuje się w ciągu dnia.</label>
-            <input type="number" name="iloscGodzinPracy">
-            <div class="iloscGodzinPracyText"></div>
-        </div>
-
-        <div data-role="main" class="ui-content">
-            <p style="text-align: center;">Autor: Justyna Konieczny</p>
+            <p style="text-align: center;">Autorzy: Filip Tańcula, Justyna Konieczny</p>
         </div>
         
     </div>
@@ -126,32 +57,16 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--PODSTONA Z DODAWANIEM GODZIN NA DANY DZIEŃ ------------------------------------------------------------------------------ -->
+    <!--PODSTONA Z DODAWANIEM GODZIN NA DANY DZIEŃ-->
     <div data-role="page" id="DayPlan">
 
 
         <!--HEADER-->
         <div data-role="header" data-theme="a">
-            <a id="myButton1" href="#MainMenu2" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
+            <a id="myButton1" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
 
             <!--<a id="InfoBtn" href="#InfoPop" data-rel="popup" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"></a>-->
-            <h6>Dodaj godz pracy</h6>
+            <h6>Dodaj godziny pracy</h6>
             <a href="#myPopup" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
             <div data-role="popup" id="myPopup" class="ui-content">
                 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
@@ -170,46 +85,36 @@
             <p class="DayPlanMonthWork">Dzisiejszy miesiąc to: </p>
             <br>
             <br>
-            
-            <label for="DayPlandataOd">dataOd</label>
+            <p>Data</p>
+            <input type="date" name="DayPlandataOd">
+            <br>
+            <br>
+
+
+            <label for="DayPlandataOd">Początek pracy</label>
             <input type="time" name="DayPlandataOd">
             <br>
-            <label for="DayPlandataDo">dataDo</label>
+            <label for="DayPlandataDo">Zakończenie pracy</label>
             <input type="time" name="DayPlandataDo">
             <br>
             <p class="DayPlandDataWynik"></p>
+            <br>
             
+            
+
+
         </div>
     </div>
-    <!--Koniec podstrony ------------------------------------------------------------------------------ -->
+    <!--Koniec podstrony -->
 
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--PODSTONA Z STATUSEM MIESIĘCZNYM ------------------------------------------------------------------------------ -->
+    <!--PODSTONA Z STATUSEM MIESIĘCZNYM -->
     <div data-role="page" id="MonthStat">
         <!--HEADER-->
         <div data-role="header" data-theme="a">
-            <a id="myButton2" href="#MainMenu2" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
+            <a id="myButton2" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
 
             <h6>Status miesięczny</h6>
             <a href="#myPopup2" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
@@ -227,7 +132,7 @@
             <h5>Powinieneś wypracować: 150 h</h5>
             <h5>Do zrobienia zostaje: 72 h</h5>
             <h5>Powodzenia!</h5>
-            <!---<a href="#MainMenu2" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
+            <!---<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
         </div>
 
 
@@ -236,36 +141,17 @@
             <h6>Footer Text</h6>
         </div>
     </div>
-    <!--Koniec podstrony ------------------------------------------------------------------------------ -->
+    <!--Koniec podstrony -->
 
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--PODSTONA Z USTAWIENIAMI APLIKACJI ------------------------------------------------------------------------------ -->
+    <!--PODSTONA Z USTAWIENIAMI APLIKACJI  -->
     <div data-role="page" id="Settings">
 
 
         <!--HEADER-->
         <div data-role="header" data-theme="a">
-            <a id="myButton4" href="#MainMenu2" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
+            <a id="myButton4" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
             <h6>Ustawienia</h6>
             <a href="#myPopup4" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
             <div data-role="popup" id="myPopup4" class="ui-content">
@@ -276,9 +162,20 @@
 
 
         <div data-role="main" class="ui-content">
-            <label for="iloscDniPracy">Podaj ilość dni pracy w tym miesiącu.</label>
-            <input type="text" name="iloscDniPracy">
+            
+            <div data-role="main" class="ui-content">
+                <label for="iloscDniPracy">Podaj ilość dni pracy w tym miesiącu.</label>
+                <input type="number" name="iloscDniPracy">
             <div class="iloscDniPracyText"></div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <label for="iloscGodzinPracy">Podaj ilość godzin jaką przepracowuje się w ciągu dnia.</label>
+                <input type="number" name="iloscGodzinPracy">
+                <div class="iloscGodzinPracyText"></div>
+            </div>
+
+
         </div>
 
 
@@ -287,37 +184,16 @@
             <h6>Footer Text</h6>
         </div>
     </div>
-    <!--Koniec podstrony ------------------------------------------------------------------------------ -->
+    <!--Koniec podstrony -->
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-    <!--PODSTONA Z INSTRUKCJA OBSLUGI APLIKACJI ------------------------------------------------------------------------------ -->
+    <!--PODSTONA Z INSTRUKCJA OBSLUGI APLIKACJI -->
     <div data-role="page" id="AppManual">
 
 
         <!--HEADER-->
         <div data-role="header" data-theme="a">
-            <a id="myButton5" href="#MainMenu2" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
+            <a id="myButton5" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
             <h6>Instrukcja</h6>
             <a href="#myPopup5" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
             <div data-role="popup" id="myPopup5" class="ui-content">
@@ -329,7 +205,7 @@
 
         <div data-role="main" class="ui-content">
             <p>Tu będzie instrukcja obsługi aplikacji z opisem funkcjonalności</p>
-            <!--<a href="#MainMenu2" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
+            <!--<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
         </div>
 
 
@@ -338,41 +214,25 @@
             <h6>Footer Text</h6>
         </div>
     </div>
-    <!--Koniec podstrony ------------------------------------------------------------------------------ -->
+    <!--Koniec podstrony -->
 
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    <!--PODSTONA Z INFORMACJAMI O AUTORACH ------------------------------------------------------------------------------ -->
+    <!--PODSTONA Z INFORMACJAMI O AUTORACH  -->
     <div data-role="page" id="AuthorsInfo">
 
 
         <!--HEADER-->
         <div data-role="header" data-theme="a">
-            <a id="myButton6" href="#MainMenu2" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
+            <a id="myButton6" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
             <h6>Autorzy</h6>
         </div>
 
         <div data-role="main" class="ui-content">
             <p>Informacje o autorach:</p>
 
-            <!--<a href="#MainMenu2" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
+            <!--<a href="#MainMenu" class="ui-btn ui-icon-back ui-btn-icon-left">Cofnij</a>-->
         </div>
 
         <!--FOOTER-->
@@ -380,7 +240,7 @@
             <h6>Footer Text</h6>
         </div>
     </div>
-    <!--Koniec podstrony ------------------------------------------------------------------------------ -->
+    <!--Koniec podstrony -->
 
     
     
