@@ -71,7 +71,7 @@ function countWorkDays(){
 }
 
 $(document).ready(function(){
-        $.mobile.changePage("#MainMenu2");
+        $.mobile.changePage("#MainMenu");
         
         console.log(daysInThisMonth());
     
