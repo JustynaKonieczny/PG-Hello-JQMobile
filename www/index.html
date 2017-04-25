@@ -7,10 +7,11 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
     
-    <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!--<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <script src="js/pgb.js"></script>
     <script src="cordova.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -25,8 +26,8 @@
     <!--STRONA GLOWNA APLIKACJI-->
     <div data-role="page" id="MainMenu">
 
-<!--		<input type="date" class="input_date"/>
-		<div class="input_date_text"></div>-->
+<!--        <input type="date" class="input_date"/>
+        <div class="input_date_text"></div>-->
         <!--HEADER-->
 <!--        <div data-role="header">
             <h2>Work Hours</h2>
@@ -62,7 +63,7 @@
 
 
         <!--HEADER-->
-        <div data-role="header" data-theme="a">
+        <div data-role="header" data-theme="a" class="headerstyle">
             <a id="myButton1" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
 
             <!--<a id="InfoBtn" href="#InfoPop" data-rel="popup" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info"></a>-->
@@ -88,17 +89,19 @@
             <p>Data</p>
             <input type="date">
             <br>
+    
+            <!--Checkbox z wyborem czy jest to dzień wolny-->
+            <label><input type="checkbox">Dzień wolny od pracy</label>
             <br>
-
 
             <label for="DayPlandataOd">Początek pracy</label>
             <input type="time" name="DayPlandataOd">
-            <br>
+            
             <label for="DayPlandataDo">Zakończenie pracy</label>
             <input type="time" name="DayPlandataDo">
             <br>
             <p class="DayPlandDataWynik"></p>
-            <br>
+            
             <hr>
             Dodaj notatkę:
             <input type="text" name="dayNote" placeholder="(opcjonalnie)">
@@ -117,7 +120,7 @@
     <!--PODSTONA Z STATUSEM MIESIĘCZNYM -->
     <div data-role="page" id="MonthStat">
         <!--HEADER-->
-        <div data-role="header" data-theme="a">
+        <div data-role="header" data-theme="a" class="headerstyle">
             <a id="myButton2" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
 
             <h6>Status miesięczny</h6>
@@ -154,7 +157,7 @@
 
 
         <!--HEADER-->
-        <div data-role="header" data-theme="a">
+        <div data-role="header" data-theme="a" class="headerstyle">
             <a id="myButton4" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
             <h6>Ustawienia</h6>
             <a href="#myPopup4" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
@@ -196,7 +199,7 @@
 
 
         <!--HEADER-->
-        <div data-role="header" data-theme="a">
+        <div data-role="header" data-theme="a" class="headerstyle">
             <a id="myButton5" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
             <h6>Instrukcja</h6>
             <a href="#myPopup5" data-rel="popup" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
@@ -228,7 +231,7 @@
 
 
         <!--HEADER-->
-        <div data-role="header" data-theme="a">
+        <div data-role="header" data-theme="a" class="headerstyle">
             <a id="myButton6" href="#MainMenu" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"></a>
             <h6>Autorzy</h6>
         </div>
